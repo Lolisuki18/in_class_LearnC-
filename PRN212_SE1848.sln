@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestedLoop_SapXep", "Nested
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestedLoop_VeHinh", "NestedLoop_VeHinh\NestedLoop_VeHinh.csproj", "{D29C6772-DC34-4DC8-BE91-A1BAA527369D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP1", "OOP1\OOP1.csproj", "{06AFE45C-7708-4D1C-9D40-9F68912A6243}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{D29C6772-DC34-4DC8-BE91-A1BAA527369D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D29C6772-DC34-4DC8-BE91-A1BAA527369D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D29C6772-DC34-4DC8-BE91-A1BAA527369D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06AFE45C-7708-4D1C-9D40-9F68912A6243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06AFE45C-7708-4D1C-9D40-9F68912A6243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06AFE45C-7708-4D1C-9D40-9F68912A6243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06AFE45C-7708-4D1C-9D40-9F68912A6243}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
