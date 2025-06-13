@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BaiTap2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="SE181799-Lê Nguyễn An Ninh
+        " Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <StackPanel>
         <Label>
             Bạn thích những gì ?
