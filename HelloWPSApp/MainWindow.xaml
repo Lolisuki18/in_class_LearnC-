@@ -1,0 +1,26 @@
+﻿<Window x:Class="HelloWPSApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloWPSApp"
+        mc:Ignorable="d"
+        Title="SE181799-Lê Nguyễn An Ninh" Height="450" Width="800" WindowState="Minimized">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="111*"/>
+            <ColumnDefinition Width="104*"/>
+            <ColumnDefinition Width="545*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="2" Content="Chương Trình Quản Lý Bán Hàng" HorizontalAlignment="Left" Margin="52,157,0,0" VerticalAlignment="Top" FontSize="24" Grid.ColumnSpan="2" RenderTransformOrigin="0.377,0.282" Foreground="#FFF33636">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF31CCC1" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+
+    </Grid>
+</Window>
