@@ -1,0 +1,57 @@
+﻿<Window x:Class="BaiTap4_XuLyChuoiWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BaiTap4_XuLyChuoiWPF"
+        mc:Ignorable="d"
+        Title="SE187799-Lê Nguyễn An Ninh-XuLyChuoiWPF" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <StackPanel Orientation="Vertical">
+        <UniformGrid Rows="1" Columns="2" Margin="5">
+            <GroupBox Header="Nhập dữ liệu">
+                <TextBox x:Name="txtNhap" Height="100"  Background="Yellow" TextWrapping="Wrap">
+                </TextBox>
+            </GroupBox>
+            <GroupBox Header="Xuất dữ liệu">
+                <TextBox x:Name="txtXuat" Height="100" Background="Yellow" TextWrapping ="Wrap">
+                </TextBox>
+            </GroupBox>
+        </UniformGrid>
+        <UniformGrid Rows="4" Columns="2" Margin="5">
+            <Button x:Name="btnNhap" FontSize="30"
+                    Content="Nhập liệu" Margin="5"
+                    Click="BtnNhap_Click">
+            </Button>
+            <Button x:Name="btnDemSoKTHoa" FontSize="30" Content="Đếm số ký tự hoa"
+                    Margin="5" Click="BtnDemSoKTHoa_Click">
+            </Button>
+            <Button x:Name="btnInChuHoa" FontSize="30"
+                    Content="In chữ hoa" Margin="5"
+                    Click="BtnInChuHoa_Click">
+            </Button>
+            <Button x:Name="btnInSoTuTrenMoiDong" FontSize="30"
+                    Content="In số từ trên mỗi dòng" Margin="5"
+                    Click="BtnInSoTuTrenMoiDong_Click">
+            </Button>
+            <Button x:Name="btnInChuThuong" FontSize="30"
+                    Content="In chữ thường" Margin="5"
+                    Click="BtnInChuThuong_Click">
+            </Button>
+            <Button x:Name="btnDemSoTu" FontSize="30"
+                    Content="Đếm số từ" Margin="5"
+                    Click="BtnDemSoTu_Click">
+            </Button>
+            <Button x:Name="btnSoKTThuong" FontSize="30"
+                    Content="Đếm số ký tự thường" Margin="5"
+                    Click="BtnSoKTThuong_Click">
+            </Button>
+            <Button x:Name="btnInNguyenAmPhuAm" FontSize="30"
+                    Content="In nguyên âm phụ âm"
+                    Margin="5" Click="BtnInNguyenAmPhuAm_Click">
+            </Button>
+        </UniformGrid>
+        <Button x:Name="btnKetThuc" Content="Kết thúc"
+                FontSize="30" Margin="5" Click="BtnKetThuc_Click">
+        </Button>
+    </StackPanel>
+</Window>
