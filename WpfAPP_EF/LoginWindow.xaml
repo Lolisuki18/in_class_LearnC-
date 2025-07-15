@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfAPP_EF.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAPP_EF"
+        mc:Ignorable="d"
+        Title="Lê Nguyễn An Ninh Đăng nhập hệ thống" Height="450" Width="800">
+    <Grid>
+        <Label Content="Đăng nhập hệ thống" HorizontalAlignment="Center" Margin="0,22,0,0" VerticalAlignment="Top" FontSize="20" Width="198"/>
+        <Label Content="Email address" HorizontalAlignment="Left" Margin="25,97,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="200,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="532" FontSize="20"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="25,165,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="200,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="532" FontSize="20"/>
+        <Button x:Name="btnLogin" Content="Đăng nhập" HorizontalAlignment="Left" Margin="250,295,0,0" VerticalAlignment="Top" FontSize="20" Click="btnLogin_Click"/>
+        <Button Content="Thoát" HorizontalAlignment="Left" Margin="466,295,0,0" VerticalAlignment="Top" FontSize="20" Width="106"/>
+
+    </Grid>
+</Window>

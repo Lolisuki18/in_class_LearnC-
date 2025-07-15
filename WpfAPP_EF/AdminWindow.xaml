@@ -1,0 +1,46 @@
+﻿<Window x:Class="WpfAPP_EF.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAPP_EF"
+        mc:Ignorable="d"
+        Title="Lê Nguyễn An Ninh AdminWindow" Height="450" Width="800">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Background="Yellow" Height="50">
+            <Label Content="Quản trị MyStore"  FontSize="30"/>
+        </StackPanel>
+        <StackPanel DockPanel.Dock="Bottom" Background="Magenta" Height="30">
+            <Label Content="Được thiết kế bởi Lê Nguyễn An Ninh" FontSize="15"/>
+        </StackPanel>
+        <TreeView x:Name="tvCategory" FontSize="20" DockPanel.Dock="Left" Background="Cyan" Width="300" SelectedItemChanged="tvCategory_SelectedItemChanged">
+
+        </TreeView>
+        <DockPanel Background ="Red">
+            <ListView DockPanel.Dock="Top" x:Name="lvProduct" FontSize="22" Grid.ColumnSpan="2" Height="103" SelectionChanged="lvProduct_SelectionChanged" >
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Mã sản phẩm" DisplayMemberBinding="{Binding ProductId}"/>
+                        <GridViewColumn Header="Tên sản phẩm" DisplayMemberBinding="{Binding ProductName}"/>
+                        <GridViewColumn Header="Số lượng" DisplayMemberBinding="{Binding UnitsInStock}"/>
+                        <GridViewColumn Header="Đơn giá" DisplayMemberBinding="{Binding UnitPrice}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <Grid Background="Yellow">
+                <Label Content="ProductId" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" FontSize="20"/>
+                <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="142,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="396" FontSize="20" RenderTransformOrigin="0.44,0.505"/>
+                <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="142,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="396" FontSize="20" RenderTransformOrigin="0.44,0.505"/>
+                <Label Content="ProductName" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top" FontSize="20"/>
+                <Label Content="Quantity" HorizontalAlignment="Left" Margin="10,126,0,0" VerticalAlignment="Top" FontSize="20"/>
+                <Label Content="Price" HorizontalAlignment="Left" Margin="15,168,0,0" VerticalAlignment="Top" FontSize="20"/>
+                <TextBox x:Name="txtQuantity" HorizontalAlignment="Left" Margin="142,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="396" FontSize="20" RenderTransformOrigin="0.44,0.505"/>
+                <TextBox x:Name="txtPrice" HorizontalAlignment="Left" Margin="142,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="396" FontSize="20" RenderTransformOrigin="0.44,0.505"/>
+                <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="171,213,0,0" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="0.946,0.221" Click="btnClear_Click"/>
+                <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="261,213,0,0" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="0.946,0.221" Click="btnSave_Click"/>
+                <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="343,213,0,0" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="0.946,0.221" Click="btnUpdate_Click"/>
+                <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="450,213,0,0" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="0.946,0.221" Click="btnDelete_Click"/>
+            </Grid>
+        </DockPanel>
+    </DockPanel>
+</Window>
