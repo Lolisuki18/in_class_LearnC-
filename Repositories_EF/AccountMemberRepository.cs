@@ -12,6 +12,12 @@ namespace Repositories_EF
     {
 
         AccountMemberDAO accountMemberDAO = new AccountMemberDAO();
+
+        public bool ChangePassword(string email, string password, string oldPassword)
+        {
+          return  accountMemberDAO.ChangePassword(email, password,  oldPassword);
+        }
+
         public AccountMember Login(string email, string pwd)
         {
             return accountMemberDAO.Login(email, pwd);

@@ -5,15 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAPP_EF"
         mc:Ignorable="d"
-        Title="Lê Nguyễn An Ninh AdminWindow" Height="450" Width="800">
+        Title="Lê Nguyễn An Ninh AdminWindow" Height="480" Width="895">
     <DockPanel>
+        <Menu x:Name="mainMenu" DockPanel.Dock="Top">
+            <MenuItem Name="menusystem" Header="Hệ thống">
+                <MenuItem Name="menusystem_changepassword" Header="Đổi mật khẩu" Click="menusystem_changepassword_Click">
+
+                </MenuItem>
+
+                <MenuItem Name="menusystem_showprofile" Header="Thông tin tài khoản">
+
+                </MenuItem>
+                <Separator/>
+                <MenuItem Name="menusystem_exit" Header="Thoát phần mềm">
+
+                </MenuItem>
+            </MenuItem>
+        </Menu>
         <StackPanel DockPanel.Dock="Top" Background="Yellow" Height="50">
             <Label Content="Quản trị MyStore"  FontSize="30"/>
         </StackPanel>
         <StackPanel DockPanel.Dock="Bottom" Background="Magenta" Height="30">
             <Label Content="Được thiết kế bởi Lê Nguyễn An Ninh" FontSize="15"/>
         </StackPanel>
-        <TreeView x:Name="tvCategory" FontSize="20" DockPanel.Dock="Left" Background="Cyan" Width="300" SelectedItemChanged="tvCategory_SelectedItemChanged">
+        <TreeView x:Name="tvCategory" FontSize="20" DockPanel.Dock="Left" Background="Cyan" Width="326" SelectedItemChanged="tvCategory_SelectedItemChanged">
 
         </TreeView>
         <DockPanel Background ="Red">

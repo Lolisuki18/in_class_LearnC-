@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="AdminWindow" Height="450" Width="858">
     <DockPanel>
+        
         <StackPanel DockPanel.Dock="Top" Background="Yellow" Height="50">
             <Label Content="Quản trị MyStore"  FontSize="30"/>
         </StackPanel>

@@ -15,5 +15,24 @@ namespace DataAccessLayer_EF
         {
             return context.AccountMembers.FirstOrDefault(a => a.EmailAddress == email && a.MemberPassword == pwd);
         }
+        public bool ChangePassword( string email,string password , string oldPassword)
+        {
+            if(password == null || email == null)
+            {
+                return false;
+            }
+            AccountMember existAccount = context.AccountMembers.FirstOrDefault(a => a.EmailAddress == email);
+            if(existAccount != null)
+            {
+                if (existAccount.MemberPassword == oldPassword)
+                {
+                    existAccount.MemberPassword = password;
+                    int ret = context.SaveChanges();
+                    return ret > 0;
+                }
+            }
+            return false;
+
+        }
     }
 }

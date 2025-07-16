@@ -16,6 +16,12 @@ namespace Services_EF
         {
            productRepository = new ProductRepository();
         }
+
+        public bool DeleteProduct(int product)
+        {
+            return productRepository.DeleteProduct(product);
+        }
+
         public List<Product> GetProducts()
         {
             return productRepository.GetProducts();
@@ -24,6 +30,16 @@ namespace Services_EF
         public List<Product> GetProductsByCategory(int cateId)
         {
             return productRepository.GetProductsByCategory(cateId);
+        }
+
+        public bool SaveProduct(Product product)
+        {
+            return productRepository.SaveProduct(product);
+        }
+
+        public bool UpdateProduct(Product product)
+        {
+           return productRepository.UpdateProduct(product);
         }
     }
 }

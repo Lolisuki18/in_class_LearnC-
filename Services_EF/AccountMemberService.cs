@@ -16,6 +16,12 @@ namespace Services_EF
         {
             accountMemberRepository = new AccountMemberRepository();
         }
+
+        public bool ChangePassword(string email, string password, string oldPassword)
+        {
+            return accountMemberRepository.ChangePassword(email, password, oldPassword);
+        }
+
         public AccountMember Login(string email, string pwd)
         {
             return accountMemberRepository.Login(email, pwd);

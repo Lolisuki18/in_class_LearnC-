@@ -9,9 +9,9 @@
     <Grid>
         <Label Content="Đăng nhập hệ thống" HorizontalAlignment="Center" Margin="0,22,0,0" VerticalAlignment="Top" FontSize="20" Width="198"/>
         <Label Content="Email address" HorizontalAlignment="Left" Margin="25,97,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="200,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="532" FontSize="20"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="200,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="532" FontSize="20" Text="admin@CompanyName.com"/>
         <Label Content="Password" HorizontalAlignment="Left" Margin="25,165,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="200,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="532" FontSize="20"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="200,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="532" FontSize="20" Text="@1"/>
         <Button x:Name="btnLogin" Content="Đăng nhập" HorizontalAlignment="Left" Margin="250,295,0,0" VerticalAlignment="Top" FontSize="20" Click="btnLogin_Click"/>
         <Button Content="Thoát" HorizontalAlignment="Left" Margin="466,295,0,0" VerticalAlignment="Top" FontSize="20" Width="106"/>
 
